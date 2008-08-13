@@ -19,5 +19,5 @@ Gem::Specification.new do |s|
   ]
   s.rdoc_options = ["--main", "README"]
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "README"]
-  s.add_dependency("rush", ["> 0.4"])
+  s.add_dependency(%q<rush>, [">= 0.4"])
 end
