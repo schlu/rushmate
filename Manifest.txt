@@ -1,0 +1,7 @@
+History.txt
+Manifest.txt
+README
+textmate_rush.gemspec
+lib/textmate_rush.rb
+lib/textmate_rush/command.rb
+lib/textmate_rush/textmate_helper.rb
