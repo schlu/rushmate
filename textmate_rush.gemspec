@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
   s.name = "textmate_rush"
   s.version = "0.0.1"
   s.date = "2008-08-13"
-  s.sumary = "Textmate to Rush bridge"
+  s.summary = "Textmate to Rush bridge"
   s.email = "schlueter@gmail.com"
   s.homepage = "http://github.com/schlueter/textmate_rush"
   s.description = "Textmate to Rush bridge"
