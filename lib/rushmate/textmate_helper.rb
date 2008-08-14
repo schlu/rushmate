@@ -1,6 +1,10 @@
 module Rushmate
   module TextmateHelper
-    def tm_current_word
+    def current_line
+      ENV["TM_CURRENT_LINE"]
+    end
+    
+    def current_word
       ENV['TM_CURRENT_WORD']
     end
     
@@ -16,12 +20,23 @@ module Rushmate
       ENV["TM_FILENAME"]
     end
     
-    def tm_project_directory
+    def project_directory?
+      ENV['TM_PROJECT_DIRECTORY']
+    end
+    
+    def project_directory
       root[ENV['TM_PROJECT_DIRECTORY'] + "/"]
     end
     
-    def tm_current_line
-      ENV["TM_CURRENT_LINE"]
+    def selected_text
+      ENV["TM_SELECTED_TEXT"]
     end
+    
+    
+    alias :tm_current_line :current_line
+    alias :tm_current_word :current_word
+    alias :tm_project_directory? :project_directory?
+    alias :tm_project_directory :project_directory
+    alias :tm_selected_text :selected_text
   end
 end

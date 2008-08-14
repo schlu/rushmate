@@ -1,3 +1,6 @@
+== 0.0.5 / 2008-08-13
+  * removed tm_ from most methods
+
 == 0.0.4 / 2008-08-13
   * added reasonable README
   * cleaned up api

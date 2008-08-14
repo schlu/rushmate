@@ -20,10 +20,10 @@ require 'rubygems'
 require 'rushmate'
 Rushmate::Command.new {
   # find ruby files with the current word in textmate
-  found_files = tm_project_directory["**/#{tm_current_word.downcase}.rb"]
+  found_files = project_directory["**/#{current_word.downcase}.rb"]
   if found_files.empty?
     # if you can't find any files show a tool tip
-    exit.show_tool_tip("can't find #{tm_current_word.downcase}.rb in project")
+    exit.show_tool_tip("can't find #{current_word.downcase}.rb in project")
   else
     # go ahead and switch to the found file(s)
     found_files.mate

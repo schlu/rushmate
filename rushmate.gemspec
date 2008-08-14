@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "rushmate"
-  s.version = "0.0.4"
+  s.version = "0.0.5"
   s.email = "schlueter@gmail.com"
   s.homepage = "http://github.com/schlueter/rushmate"
   s.description = "Textmate to Rush bridge"
