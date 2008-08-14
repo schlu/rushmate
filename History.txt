@@ -1,3 +1,6 @@
+== 0.0.6 / 2008-08-14
+  * beginning adding hooks for collecting user input
+
 == 0.0.5 / 2008-08-13
   * removed tm_ from most methods
 

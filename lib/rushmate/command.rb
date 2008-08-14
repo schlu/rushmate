@@ -18,7 +18,11 @@ module Rushmate
     end
     
     def exit
-      Rushmate::Exit.new
+      Rushmate::Exit
+    end
+    
+    def input
+      Rushmate::UserInput
     end
     
     private
@@ -26,7 +30,6 @@ module Rushmate
         self.shell = Rush::Shell.new
         shell.class.class_eval do
           def print_result(res)
-
           end
         end
       end

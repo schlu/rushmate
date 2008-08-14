@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "rushmate"
-  s.version = "0.0.5"
+  s.version = "0.0.6"
   s.email = "schlueter@gmail.com"
   s.homepage = "http://github.com/schlueter/rushmate"
   s.description = "Textmate to Rush bridge"
@@ -18,7 +18,8 @@ Gem::Specification.new do |s|
     "lib/rushmate.rb",
     "lib/rushmate/command.rb",
     "lib/rushmate/exit.rb",
-    "lib/rushmate/textmate_helper.rb"
+    "lib/rushmate/textmate_helper.rb",
+    "lib/rushmate/user_input.rb"
   ]
   
   s.has_rdoc = true

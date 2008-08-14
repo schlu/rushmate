@@ -25,8 +25,15 @@ Rushmate::Command.new {
     # if you can't find any files show a tool tip
     exit.show_tool_tip("can't find #{current_word.downcase}.rb in project")
   else
-    # go ahead and switch to the found file(s)
-    found_files.mate
+    if found_files.size == 1
+      # if there is only 1 file go ahead and switch to that file
+      found_files.mate
+    else
+      # if there are multiple files prompt the user for which file they want to switch to 
+      # then switch to their selection
+      menu_files = found_files.collect { |f| f.full_path.gsub(project_directory.full_path, "") }
+      project_directory[input.select_from_array(menu_files)].mate
+    end
   end
 }
 

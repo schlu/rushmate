@@ -6,3 +6,4 @@ lib/rushmate.rb
 lib/rushmate/command.rb
 lib/rushmate/exit.rb
 lib/rushmate/textmate_helper.rb
+lib/rushmate/user_input.rb
