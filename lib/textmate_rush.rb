@@ -1,5 +1,0 @@
-require 'rubygems'
-require 'rush'
-require 'rush/shell'
-require 'textmate_rush/textmate_helper'
-require 'textmate_rush/command'

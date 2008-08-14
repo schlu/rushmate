@@ -1,7 +1,8 @@
 History.txt
 Manifest.txt
 README
-textmate_rush.gemspec
-lib/textmate_rush.rb
-lib/textmate_rush/command.rb
-lib/textmate_rush/textmate_helper.rb
+rushmate.gemspec
+lib/rushmate.rb
+lib/rushmate/command.rb
+lib/rushmate/exits.rb
+lib/rushmate/textmate_helper.rb

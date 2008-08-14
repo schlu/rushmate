@@ -1,4 +1,4 @@
-module TextmateRush
+module Rushmate
   class Command
     include TextmateHelper
     attr_accessor :shell

@@ -1,4 +1,4 @@
-module TextmateRush
+module Rushmate
   module TextmateHelper
     def tm_current_word
       ENV['TM_CURRENT_WORD']
