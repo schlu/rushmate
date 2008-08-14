@@ -4,5 +4,5 @@ README
 rushmate.gemspec
 lib/rushmate.rb
 lib/rushmate/command.rb
-lib/rushmate/exits.rb
+lib/rushmate/exit.rb
 lib/rushmate/textmate_helper.rb

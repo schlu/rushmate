@@ -1,3 +1,8 @@
+== 0.0.4 / 2008-08-13
+  * added reasonable README
+  * cleaned up api
+  * suppressed rush output
+
 == 0.0.3 / 2008-08-13
   * renamed from textmate_rush -> rushmate
 

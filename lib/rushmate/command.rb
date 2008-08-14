@@ -1,12 +1,10 @@
 module Rushmate
+  # The Command Class is the main class in Rushmate.
   class Command
     include TextmateHelper
     attr_accessor :shell
-    def initialize()
-      self.shell = Rush::Shell.new
-    end
-    
-    def run(&block)
+    def initialize(&block)
+      setup_shell
       self.instance_eval(&block)
     end
     
@@ -19,5 +17,18 @@ module Rushmate
       execute sym.to_s
     end
     
+    def exit
+      Rushmate::Exit.new
+    end
+    
+    private
+      def setup_shell
+        self.shell = Rush::Shell.new
+        shell.class.class_eval do
+          def print_result(res)
+
+          end
+        end
+      end
   end
 end

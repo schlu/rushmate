@@ -1,3 +1,33 @@
-This is going to be a textmate http://macromates.com to rush http://rush.heroku.com/ bridge.
+= Rushmate
 
-I am going to create a bunch of helpers to access things that would normally be in TM_* variables along with a few other nifty things I have in mind.
+Rushmate attempts to make Textmate (http://macromates.com) custom command writing in ruby cleaner and smaller.  It does this by leveraging rush (http://rush.heroku.com/).
+
+== Dependencies
+
+* Rush
+
+== Install
+
+gem sources -a http://gems.github.com
+sudo gem install schlueter-rushmate
+
+== Sample
+
+After installing rushmate.  You would make a command in Textmate with the following text.
+
+#!/usr/bin/env ruby
+require 'rubygems'
+require 'rushmate'
+Rushmate::Command.new {
+  # find ruby files with the current word in textmate
+  found_files = tm_project_directory["**/#{tm_current_word.downcase}.rb"]
+  if found_files.empty?
+    # if you can't find any files show a tool tip
+    exit.show_tool_tip("can't find #{tm_current_word.downcase}.rb in project")
+  else
+    # go ahead and switch to the found file(s)
+    found_files.mate
+  end
+}
+
+For more information on creating Textmate commands read http://manual.macromates.com/en/commands#commands.
