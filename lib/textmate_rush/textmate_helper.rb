@@ -19,5 +19,9 @@ module TextmateRush
     def tm_project_directory
       root[ENV['TM_PROJECT_DIRECTORY'] + "/"]
     end
+    
+    def tm_current_line
+      ENV["TM_CURRENT_LINE"]
+    end
   end
 end
