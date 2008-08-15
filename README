@@ -32,7 +32,7 @@ Rushmate::Command.new {
       # if there are multiple files prompt the user for which file they want to switch to 
       # then switch to their selection
       menu_files = found_files.collect { |f| f.full_path.gsub(project_directory.full_path, "") }
-      project_directory[input.select_from_array(menu_files)].mate
+      project_directory[user_input.quick_menu_from_array(menu_files)].mate
     end
   end
 }

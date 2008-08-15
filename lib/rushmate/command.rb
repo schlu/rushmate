@@ -5,7 +5,7 @@ module Rushmate
     attr_accessor :shell
     def initialize(&block)
       setup_shell
-      self.instance_eval(&block)
+      self.instance_eval(&block) if block
     end
     
     def execute(thing)
@@ -21,7 +21,7 @@ module Rushmate
       Rushmate::Exit
     end
     
-    def input
+    def user_input
       Rushmate::UserInput
     end
     
