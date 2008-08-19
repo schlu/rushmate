@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "rushmate"
-  s.version = "0.0.7"
+  s.version = "0.0.8"
   s.email = "schlueter@gmail.com"
   s.homepage = "http://github.com/schlueter/rushmate"
   s.description = "Makes writing TextMate commands easier by providing convient methods for getting environment variables and getting user input."
