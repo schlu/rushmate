@@ -10,6 +10,7 @@ cleaner and smaller.  It does this by leveraging rush (http://rush.heroku.com/).
 == Install
 
 gem sources -a http://gems.github.com
+
 sudo gem install schlueter-rushmate
 
 == Sample
