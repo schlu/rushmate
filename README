@@ -1,6 +1,7 @@
 = Rushmate
 
-Rushmate attempts to make Textmate (http://macromates.com) custom command writing in ruby cleaner and smaller.  It does this by leveraging rush (http://rush.heroku.com/).
+Rushmate attempts to make Textmate (http://macromates.com) custom command writing in ruby 
+cleaner and smaller.  It does this by leveraging rush (http://rush.heroku.com/).
 
 == Dependencies
 
