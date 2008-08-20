@@ -20,5 +20,5 @@ task :cleanup do
 end
 
 task :rdoc => :cleanup do
-  %x{rdoc -o doc -m README lib/rushmate/**.rb README}
+  %x{rdoc -o doc -m README lib/rushmate/**.rb README MIT-LICENSE}
 end

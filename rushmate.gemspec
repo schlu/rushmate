@@ -30,7 +30,7 @@ Gem::Specification.new do |s|
   
   s.has_rdoc = true
   s.rdoc_options = ["--main", "README"]
-  s.extra_rdoc_files = ["History.txt", "Manifest.txt", "README"]
+  s.extra_rdoc_files = ["History.txt", "MIT-LICENSE", "Manifest.txt", "README"]
   s.add_dependency(%q<rush>, [">= 0.4"])
 
   if s.respond_to? :specification_version then
