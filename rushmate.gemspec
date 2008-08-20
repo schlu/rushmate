@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.authors = ["Nicholas Schlueter"]
   s.files = [
     "History.txt",
+    "MIT-LICENSE",
     "Manifest.txt",
     "README",
     "Rakefile",
